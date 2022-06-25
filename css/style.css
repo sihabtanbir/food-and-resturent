@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color:var(--primary-color);
+}
+:root{
+    --primary-color:#ab2c48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --text-color:#555;
+    --gray:#999;
+    --primary-font:"Roboto", sans-serif;
+    --secondary-font:"Quicksand", sans-serif;
+        
+    }
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+    cursor:url('../media/burger.jpg') auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--primary-color);
+}
+p{
+    font-size: 1rem;
+    color:var(--text-color);
+    font-weight:400;
+    line-height: 1.75em;
+    letter-spacing: 1px;
+}
+
+/*
+=========================
+    custom scrollbar
+=========================
+*/
+::-webkit-scrollbar{
+    width: 0.625em;
+}
+::-webkit-scrollbar-track{
+    background:#fff;
+}
+::-webkit-scrollbar-thumb{
+    background:var(--primary-color);
+}
+
+/*
+=========================
+    custom css
+=========================
+*/
+
+.main-btn{
+    display: inline-block;
+    padding: 0.6em 1.8em;
+    line-height: 1.56em;
+    background-color: var(--primary-color);
+    border:0.18em solid var(--primary-color);
+    color:#fff;
+    font-size: 0.93em;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0/ 19%);
+    -webkit-transition: all .4s ease-out 0s ;
+    transition: all .4s ease-out 0s;
+}
+.white-btn{
+    display: inline-block;
+    padding: 0.6em 1.8em;
+    line-height: 1.56em;
+    background-color: #fff;
+    border:0.18em solid var(--primary-color);
+    color:var(--primary-color);
+    font-size: 0.93em;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0/ 19%);
+    -webkit-transition: all .4s ease-out 0s ;
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background: transparent;
+    color:var(--primary-color);
+}
+.white-btn:hover{
+    background:transparent;
+    color:var(--primary-color);
+    border-color:;
+}
+.wrapper{
+    padding: 4em 0;
+    overflow: hidden;
+
+}
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+.active{
+    background: transparent;
+   
+    color:var(--secondary-color) !important;
+    border-radius:5px ;
+
+}
+
+/*
+=========================
+    header design
+=========================
+*/
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left:0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.62em;
+    transition: all 2000ms linear;
+}
+header .logo-btn{
+    border-radius: 50% 20% / 10% 40%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border:unset;
+    box-shadow: none;
+}
+ nav ul li a{
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--primary-color) !important;
+    letter-spacing: 1px;
+   
+}
+nav ul li a:hover{
+    color:var(--secondary-color) !important;
+}
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.125em 1.75em #333;
+    transition: all.15s ease-in-out 0s;
+}
+
+/*
+=========================
+    top banner
+=========================
+*/
+.top-banner{
+    width: 100%;
+    background: url('../media/dong_po_rouchinese_food_204072.jpg') no-repeat center;
+    background-size: cover;
+    padding: 14em 0 8em;
+}
+
+
+
+
+/*
+=========================
+    COUNTER SECTION
+=========================
+*/
+.counter-section{
+    background-color:var(--primary-color);
+    padding: 2.5em 0;
+    overflow: hidden;
+    text-align: center;
+}
+.counter-section p,
+.counter-section span{
+    color:white;
+    text-transform: uppercase;
+}
+
+
+
+
+/*
+=========================
+   about section
+=========================
+*/
+
+.about-section{
+    background: rgb(255, 255, 255);
+
+}
+.about-section .card,
+.about-section .card img{
+    
+        border-radius: 0.625em;
+        height: 450px;
+
+
+}
+.about-section .text-sec{
+    padding-left: 2em;
+}
+
+.story-section{
+    width: 100%;
+    height: 28.125em;
+    background: url(../media/white-art.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/*
+=========================
+    explore food
+=========================
+*/
+
+.explore-food .card{
+    border:none;
+    border-radius: 00.93em;
+    background-color: transparent;
+}
+.explore-food .card img{
+    border-radius: 00.93em;
+    object-fit: cover;
+    height: 300px;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    color:var(--primary-color);
+    padding-bottom: 1em;
+    border-bottom:0.625rem solid rgb(248, 238, 238);
+}
+.explore-food .card span del{
+    color:var(--gray);
+    margin-left: 0.5em;
+
+}
+
+/*
+=========================
+    testimonial
+=========================
+*/
+.testimonial-section{
+    background: var(--primary-color);
+}
+.testimonial-section .carousel-item{
+    color:#222;
+    margin-top: 3em;
+    padding: 10em 3.25em;
+    background: rgb(237, 203, 230);
+    text-align: center;
+    border-radius:0.93em;
+}
+.testimonial-section span carousel-control-prev-icon,
+.testimonial-section span carousel-control-next-icon{
+    color:var(--primary-color)!important;
+}
+
+/*
+=========================
+    FAQ
+=========================
+*/
+
+.faq h4{
+    color:rgb(0, 0, 0);
+}
+.faq span{
+    color:var(--primary-color);
+}
+
+.book-food{
+    background: url('../media/food-book.jpg') no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 72px;
+    padding: 4em 0;
+}
+
+/*
+=========================
+    newslatter
+=========================
+*/
+
+.newslatter{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.newslatter .form-control{
+ height: 3.25em;
+ padding:0 1.25em;
+ font-size: 0.875em;
+ font-weight: 700;
+ width: 100%;
+ border-radius: 0;
+ border: 0.187em solid var(--gray);
+ color:#111;    
+
+}
+.newslatter .form-control:hover{
+    outline: none;
+    box-shadow: none;
+    border-color:var(--primary-color);
+}
+/*
+=========================
+    Footer
+=========================
+*/
+.footer{
+    background: var(--primary-color);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color:#fff;
+    padding:0 1.87em;
+}
+.footer a i{
+    font-size: 1.5rem;
+    padding:0 1rem;
+    color:#ddd;
+}
